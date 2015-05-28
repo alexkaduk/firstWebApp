@@ -28,5 +28,20 @@ namespace webApp.Controllers
 
             return View();
         }
+
+        public string Hello()
+        {
+            return "Hello, ASP.NET MVC";
+        }
+
+        public string Greeting(string name)
+        {
+            return HttpUtility.HtmlEncode("Hello, " + name);
+        }
+
+        public ActionResult RedirectToIbud()
+        {
+            return Redirect("http://ibud.ua");
+        }
     }
 }

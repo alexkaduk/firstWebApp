@@ -1,0 +1,31 @@
+﻿@{
+    //Layout = null;
+    ViewBag.Title = "Create Menu";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>Create Menu</h2>
+    <form action="/SubmitData/CreateMenu" method="post">
+        <fieldset>
+            <legend>Menu</legend>
+            <div>Id:</div>
+            <input name="id" value="1"/>
+            <div>Text</div>
+            <input name="text" value="text"/>
+            <div>Price:</div>
+            <input name="price" value="10"/>
+            <div>Category:</div>
+            <input name="category" value="category"/>
+            <div></div>
+            <button type="submit">Submit</button>
+        </fieldset>    
+    </form>
+</body>
+</html>
